@@ -47,3 +47,34 @@ print("\nFiles saved:")
 print("- output/sales_data.json")
 print("- output/sales_data.xlsx") 
 print("- output/sales_with_totals.csv")
+
+
+
+# Loading different File Types
+# CSV
+df_csv = pd.read_csv('output/sales_with_totals.csv')
+print("Loaded CSV Data:")
+print(df_csv)
+
+# JSON
+df_json = pd.read_json('output/sales_data.json')
+print("Loaded JSON Data:")
+print(df_json)
+
+# or for simple JSON:
+with open('output/sales_data.json', 'r') as f:
+    data = json.load(f)
+print("Loaded JSON Data 2:")
+print(data)
+
+# Excel
+df_excel = pd.read_excel('output/sales_data.xlsx')
+print("Loaded Excel Data:")
+print(df_excel)
+
+# Text files
+with open('output/test_file.txt', 'r') as f:
+    text = f.read()
+
+print("Loaded Text Data:")  
+print(text)
