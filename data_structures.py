@@ -97,3 +97,6 @@ num_sets.add(6)
 num_sets.remove(44) # error if not found
 num_sets.discard(2) # no error if not found
 print(num_sets)
+
+if 3 in num_sets:
+    print("3 is in the set")
