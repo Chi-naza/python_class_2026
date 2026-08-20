@@ -45,5 +45,6 @@ import pandas as pd
 
 
 # Generate a doc of all packages: pip freeze > requirements.txt
+# When someone gets into the project they can run: pip install -r requirements.txt
 
 # Install specific package: pip install package_name==version
